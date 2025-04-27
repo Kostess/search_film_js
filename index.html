@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Поиск фильмов</title>
+    <link rel="stylesheet" href="src/style/index.css">
+</head>
+<body>
+    <div id="root">
+        <div class="container">
+            <h1 class="title-search">Приложение поиска фильмов</h1>
+            <form id="search-form" class="search-form">
+                <label for="search">Найти фильм:</label>
+                <input
+                        type="search"
+                        name="search"
+                        id="search"
+                        class="search-field"
+                        placeholder="Введите название фильма"
+                        required
+                >
+                <button type="submit" class="search-button" id="search-button">
+                    Найти
+                </button>
+            </form>
+            <div class="history-search" id="history-search"></div>
+
+            <div id="films" class="films"></div>
+            <div id="pagination-container"></div>
+        </div>
+    </div>
+    <script src="src/main.js" type="module"></script>
+</body>
+</html>
